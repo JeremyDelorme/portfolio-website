@@ -130,7 +130,7 @@ font-size: 24px;
    list-style-type: none;
    display: flex;
    flex-direction: row;
-   justify-content: flex-end;
+   justify-content: flex-start;
  }
  .navigation-list li {
   margin: 20px
@@ -315,6 +315,10 @@ font-size: 24px;
   margin-bottom: 20px;
 }
 
+.clickable-links {
+  text-decoration: underline;
+}
+
 /* #### END OF Contact Page styling #### */
 
 /* #### START OF Work Page styling #### */
@@ -331,7 +335,18 @@ font-size: 24px;
 }
 
 .work_screenshot {
-max-width: 70%;
+  max-width: 70%;
+}
+
+.created_using_item {
+  padding: 20px;
+}
+
+.work-link-buttons {
+  display: grid;
+  text-align: center;
+  justify-content: center;
+  align-self: end;
 }
 
 
@@ -359,6 +374,9 @@ max-width: 70%;
   border-radius: 5%;
   /* opacity: 70%; */
   padding-left: 20px;
+  align-self: end;
+  padding-bottom: 20px;
+  height: 100%;
 }
 
 .created_using {
@@ -369,7 +387,7 @@ max-width: 70%;
 .created_using_item {
   text-align: center;
 }
-.grid > *:nth-child(1) {
+/* .grid > *:nth-child(1) {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
 }
@@ -403,11 +421,14 @@ max-width: 70%;
   grid-column: auto / auto;
   grid-row: auto / auto;
   padding-bottom: 15px;
-}
+} */
 
 .see-project {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
   text-decoration: underline;
-  font-size: 16px;
+  font-size: 16px; 
 }
 
 /* #### END OF Grid styling #### */
