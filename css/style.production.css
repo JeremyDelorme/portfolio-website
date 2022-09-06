@@ -1,24 +1,9 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.3.6,
-* Autoprefixer: v10.3.1
-* Browsers: last 4 version
-*/
-
-/*
-Primary Color (Turquoise): #357b70;
-Secondary Color (Orange): #e0b354;
-Dark Grey : #2b2b2b
-Background Color (Lightgray): #D3D3D3;
-Text Color Light (White): #FFF;
-Text Color Dark (Black): #000;
-
-*/
-
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+/* GENERAL */
 
 body {
   font-family: 'Josefin Sans', sans-serif;
@@ -43,8 +28,6 @@ main {
   font-weight: bold;
 }
 
-/*START OF TEXT STYLING */
-
 h1 {
   font-size: 50px;
   max-width: 700px;
@@ -67,14 +50,12 @@ h3 {
 
 p {
   color: #000;
-  font-size: 20px;
+  font-size: 24px;
   padding-left: 30px;
   padding-right: 30px;
 }
 
-/* #### END OF Text styling #### */
-
-/* #### START OF Link styling #### */
+/* LINK STYLING */
 
 a {
   color: #000;
@@ -85,16 +66,11 @@ a:hover, a:focus {
   text-decoration: none;
 }
 
-/* a:visited {
-  color: #7b0000;
-} */
 a:active {
   color: #000000;
 }
 
-/* #### END OF Link styling #### */
-
-/* #### START OF Header styling #### */
+/* HEADER */
 
 .page-header {
   display: -webkit-box;
@@ -120,11 +96,9 @@ font-size: 24px;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  /* text-align: right; */
 }
-/* #### END OF Header styling #### */
 
- /* #### START OF Navigation styling #### */
+/* NAVBAR */
 
  .navigation-list {
    list-style-type: none;
@@ -144,9 +118,7 @@ font-size: 24px;
    text-decoration: none;
  }
 
-/* #### END OF Navigation styling #### */
-
-/* #### START OF Button styling #### */
+/* BUTTONS */
 
 .button{
   border: none;
@@ -171,9 +143,7 @@ button:hover, button:focus, .button:hover, .button:focus {
   color: #000
 }
 
-/* #### END OF Button styling #### */
-
-/* #### START OF Img styling #### */
+/* IMAGES */
 
 .shortcut-icon {
   width: 30px;
@@ -199,10 +169,7 @@ text-decoration: underline;
 font-size: 24px;
 }
 
-
-/* #### END OF img styling #### */
-
-/* #### START OF About Page styling #### */
+/* ABOUT PAGE */
 
 .picture-about {
   width: 200px;
@@ -267,27 +234,8 @@ font-size: 24px;
   border-radius: 10%;
   margin-bottom: 40px;
 }
-  /* #### START of Animation Styling #### */
-.sun {
-  -webkit-animation: 4s color-change infinite alternate linear;
-          animation: 4s color-change infinite alternate linear;
-}
 
-.cloud-front {
-  -webkit-animation: 30s cloud-move infinite alternate linear;
-          animation: 30s cloud-move infinite alternate linear;
-}
-
-.cloud-back {
-  -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
-          animation: 34s cloud-move-reverse infinite alternate linear;
-}
-
-  /* #### START of Animation Styling #### */
-/* #### END OF About Page styling #### */
-
-/* #### START OF Contact Page styling #### */
-
+/* CONTACT PAGE */
 
 .contact-main {
   max-width: 700px;
@@ -319,9 +267,7 @@ font-size: 24px;
   text-decoration: underline;
 }
 
-/* #### END OF Contact Page styling #### */
-
-/* #### START OF Work Page styling #### */
+/* WORK PAGE */
 
 .work {
   display: grid;
@@ -340,6 +286,7 @@ font-size: 24px;
 
 .created_using_item {
   padding: 20px;
+  font-size: 16px;
 }
 
 .work-link-buttons {
@@ -349,34 +296,24 @@ font-size: 24px;
   align-self: end;
 }
 
-
-
-/* #### END OF Work Page styling #### */
-
-/* START grid fallback */
-/* .grid__item {
-  background-color: #D3D3D3;
-  display: inline-block;
-  width: 33%;
-  padding-left: 20px;
-  border-radius: 5%;
-} */
-/* END grid fallback */
-
-/* #### START OF Grid styling #### */
-
-
+/* GRID & GRID ITEMS */ 
 
 .grid__item {
   background-color: rgb(243, 233, 221);
-  margin: 0;
+  margin: 30px;
   text-align: center;
   border-radius: 5%;
-  /* opacity: 70%; */
-  padding-left: 20px;
-  align-self: end;
-  padding-bottom: 20px;
-  height: 100%;
+  padding: 50px;
+  margin: 50px;
+}
+
+.grid__item-last {
+  background-color: rgb(243, 233, 221);
+  margin: 30px;
+  text-align: center;
+  border-radius: 5%;
+  padding: 50px;
+  margin: 50px;
 }
 
 .created_using {
@@ -387,41 +324,6 @@ font-size: 24px;
 .created_using_item {
   text-align: center;
 }
-/* .grid > *:nth-child(1) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-}
-
-.grid > *:nth-child(2) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-}
-
-.grid > *:nth-child(3) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-}
-
-.grid > *:nth-child(4) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-}
-
-.grid > *:nth-child(5) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-}
-
-.grid > *:nth-child(6) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 3;
-}
-
-.grid__item:last-child {
-  grid-column: auto / auto;
-  grid-row: auto / auto;
-  padding-bottom: 15px;
-} */
 
 .see-project {
   display: flex;
@@ -431,9 +333,7 @@ font-size: 24px;
   font-size: 16px; 
 }
 
-/* #### END OF Grid styling #### */
-
-/* #### START of Footer styling #### */
+/* FOOTER */
 
 .page-footer {
   clear: both;
@@ -463,9 +363,7 @@ font-size: 24px;
   transition-property: width-height;
 }
 
-/* #### END of Footer styling #### */
-
-/* #### START of @supports #### */
+/* SUPPORTS */
 
 @supports (display: grid) {
   .grid {
@@ -482,9 +380,7 @@ font-size: 24px;
   }
 }
 
-/* #### END of @supports #### */
-
-/* #### START of @media #### */
+/* MEDIAS */
 
 @media all and (max-width: 500px) {
   .grid {
@@ -510,9 +406,8 @@ font-size: 24px;
 
   }
 }
-/* #### END of @media #### */
 
-/* #### START of @keyframes #### */
+/* KEYFRAMES */
 
 @-webkit-keyframes color-change {
   0% {
@@ -581,5 +476,3 @@ font-size: 24px;
             transform: translate(100px, 48px);
   }
 }
-
-/* #### END of @keyframes #### */
